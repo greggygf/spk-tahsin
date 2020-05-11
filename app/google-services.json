@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1016108303356",
+    "firebase_url": "https://spk-tahsin.firebaseio.com",
+    "project_id": "spk-tahsin",
+    "storage_bucket": "spk-tahsin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016108303356:android:7098dff4c3b85062f5e879",
+        "android_client_info": {
+          "package_name": "com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016108303356-dshiurujjqumuk1bjcl6srb13ji09808.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps",
+            "certificate_hash": "7a6f513c70c8aad66667f0828ad7381ac80da30d"
+          }
+        },
+        {
+          "client_id": "1016108303356-0091mohcak1sqsm13ia2elm5se99tuib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1IfwWEEofpi5ba06vWx50643wLa49_fE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016108303356-0091mohcak1sqsm13ia2elm5se99tuib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

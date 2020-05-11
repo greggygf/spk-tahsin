@@ -52,6 +52,7 @@
                 android:layout_height="70dp"
                 android:background="@drawable/button_primary"
                 android:fontFamily="@font/poppins_regular"
+                android:onClick="onClickResult"
                 android:paddingLeft="20dp"
                 android:paddingTop="15dp"
                 android:paddingRight="20dp"

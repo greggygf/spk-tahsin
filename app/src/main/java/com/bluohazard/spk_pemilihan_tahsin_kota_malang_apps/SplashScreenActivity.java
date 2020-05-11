@@ -1,4 +1,4 @@
- package com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps;
+package com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
- public class SplashScreenActivity extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
