@@ -18,4 +18,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this, ResultActivity.class);
         startActivity(i);
     }
+
+    public void onClickEditData(View view) {
+        Intent i = new Intent(MainActivity.this, EditDataActivity.class);
+        startActivity(i);
+    }
 }

@@ -5,7 +5,22 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorGreen</item>
         <item name="colorPrimaryDark">@color/colorGreen</item>
-        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorBlack</item>
+    </style>
+
+    <style name="titleForm" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/colorGreen</item>
+    </style>
+
+    <style name="inputTextForm" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/colorBlack</item>
     </style>
 
 </resources>

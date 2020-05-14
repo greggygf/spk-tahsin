@@ -85,6 +85,7 @@
                 android:layout_height="70dp"
                 android:background="@drawable/button_primary"
                 android:fontFamily="@font/poppins_regular"
+                android:onClick="onClickEditData"
                 android:paddingLeft="20dp"
                 android:paddingTop="15dp"
                 android:paddingRight="20dp"
@@ -98,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Pendaftaran"
+                android:text="Edit Data"
                 android:textAlignment="center"
                 android:textColor="@color/colorGreen"
                 android:textSize="14dp" />
