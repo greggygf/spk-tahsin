@@ -7,9 +7,22 @@ import java.util.Map;
 
 public class Tahsin {
     public String nama;
-    public int sistem_keamanan, lama_pendidikan, jarak, fasilitas, biaya, program_pembelajaran, skor;
+    public int sistem_keamanan, lama_pendidikan, jarak, fasilitas, biaya, program_pembelajaran;
+
+    public double skor;
 
     public Tahsin() {
+    }
+
+    public Tahsin(String nama, int sistem_keamanan, int lama_pendidikan, int jarak, int fasilitas, int biaya, int program_pembelajaran, double skor) {
+        this.nama = nama;
+        this.sistem_keamanan = sistem_keamanan;
+        this.lama_pendidikan = lama_pendidikan;
+        this.jarak = jarak;
+        this.fasilitas = fasilitas;
+        this.biaya = biaya;
+        this.program_pembelajaran = program_pembelajaran;
+        this.skor = skor;
     }
 
     @Exclude
