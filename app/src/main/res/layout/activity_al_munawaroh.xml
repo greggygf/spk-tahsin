@@ -146,18 +146,35 @@
         app:layout_constraintTop_toBottomOf="@id/titlePP" />
 
     <Button
+        android:id="@+id/buttonUpdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/button_primary"
         android:fontFamily="@font/poppins_bold"
         android:onClick="onClickUpdateData"
         android:text="Update"
         android:textColor="@color/colorWhite"
         android:textSize="18dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/inputPP" />
+
+    <Button
+        android:id="@+id/buttonHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_secondary"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="onClickResult"
+        android:text="LIHAT HASIL"
+        android:textColor="@color/colorGreen"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonUpdate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

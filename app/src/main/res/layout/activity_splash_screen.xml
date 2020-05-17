@@ -25,7 +25,7 @@
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="CARI TAHSIN!"
+        android:text="Cari Tahsin!"
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
         android:textSize="28dp"

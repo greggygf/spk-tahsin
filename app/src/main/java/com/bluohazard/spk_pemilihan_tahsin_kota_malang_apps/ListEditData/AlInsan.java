@@ -13,6 +13,7 @@ import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.Class.Tahsin;
 import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.EditDataActivity;
 import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.MainActivity;
 import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.R;
+import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.ResultActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -505,5 +506,12 @@ public class AlInsan extends AppCompatActivity {
         perhitungan();
 
         Toast.makeText(this, "Update data berhasil!", Toast.LENGTH_LONG).show();
+    }
+
+    public void onClickResult(View view) {
+        perhitungan();
+
+        Intent i = new Intent(AlInsan.this, ResultActivity.class);
+        startActivity(i);
     }
 }

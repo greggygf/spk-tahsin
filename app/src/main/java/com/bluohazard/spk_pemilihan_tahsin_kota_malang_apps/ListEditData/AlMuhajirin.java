@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.Class.Tahsin;
 import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.EditDataActivity;
 import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.R;
+import com.bluohazard.spk_pemilihan_tahsin_kota_malang_apps.ResultActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -79,7 +80,7 @@ public class AlMuhajirin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_al_insan);
+        setContentView(R.layout.activity_al_muhajirin);
 
         edtTextSistemKeamanan = findViewById(R.id.inputSistemKeamanan);
         edtTextLamaPendidikan = findViewById(R.id.inputLamaPendidikan);
@@ -92,12 +93,6 @@ public class AlMuhajirin extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Tahsin tahsin = dataSnapshot.getValue(Tahsin.class);
-                edtTextSistemKeamanan.setText(String.valueOf(tahsin.sistem_keamanan));
-                edtTextLamaPendidikan.setText(String.valueOf(tahsin.lama_pendidikan));
-                edtTextJarak.setText(String.valueOf(tahsin.jarak));
-                edtTextFasilitas.setText(String.valueOf(tahsin.fasilitas));
-                edtTextBiaya.setText(String.valueOf(tahsin.biaya));
-                edtTextProgramPembelajaran.setText(String.valueOf(tahsin.program_pembelajaran));
 
                 nilaiBiayaAlInsan = tahsin.biaya;
                 nilaiFasilitasAlInsan = tahsin.fasilitas;
@@ -158,6 +153,12 @@ public class AlMuhajirin extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Tahsin tahsin = dataSnapshot.getValue(Tahsin.class);
+                edtTextSistemKeamanan.setText(String.valueOf(tahsin.sistem_keamanan));
+                edtTextLamaPendidikan.setText(String.valueOf(tahsin.lama_pendidikan));
+                edtTextJarak.setText(String.valueOf(tahsin.jarak));
+                edtTextFasilitas.setText(String.valueOf(tahsin.fasilitas));
+                edtTextBiaya.setText(String.valueOf(tahsin.biaya));
+                edtTextProgramPembelajaran.setText(String.valueOf(tahsin.program_pembelajaran));
 
                 nilaiBiayaAlMuhajirin = tahsin.biaya;
                 nilaiFasilitasAlMuhajirin = tahsin.fasilitas;
@@ -494,15 +495,22 @@ public class AlMuhajirin extends AppCompatActivity {
     }
 
     public void onClickUpdateData(View view) {
-        ref.child("sistem_keamanan").setValue(Integer.parseInt(edtTextSistemKeamanan.getText().toString()));
-        ref.child("lama_pendidikan").setValue(Integer.parseInt(edtTextLamaPendidikan.getText().toString()));
-        ref.child("jarak").setValue(Integer.parseInt(edtTextJarak.getText().toString()));
-        ref.child("fasilitas").setValue(Integer.parseInt(edtTextFasilitas.getText().toString()));
-        ref.child("biaya").setValue(Integer.parseInt(edtTextBiaya.getText().toString()));
-        ref.child("program_pembelajaran").setValue(Integer.parseInt(edtTextProgramPembelajaran.getText().toString()));
+        ref3.child("sistem_keamanan").setValue(Integer.parseInt(edtTextSistemKeamanan.getText().toString()));
+        ref3.child("lama_pendidikan").setValue(Integer.parseInt(edtTextLamaPendidikan.getText().toString()));
+        ref3.child("jarak").setValue(Integer.parseInt(edtTextJarak.getText().toString()));
+        ref3.child("fasilitas").setValue(Integer.parseInt(edtTextFasilitas.getText().toString()));
+        ref3.child("biaya").setValue(Integer.parseInt(edtTextBiaya.getText().toString()));
+        ref3.child("program_pembelajaran").setValue(Integer.parseInt(edtTextProgramPembelajaran.getText().toString()));
 
         perhitungan();
 
         Toast.makeText(this, "Update data berhasil!", Toast.LENGTH_LONG).show();
+    }
+
+    public void onClickResult(View view) {
+        perhitungan();
+
+        Intent i = new Intent(AlMuhajirin.this, ResultActivity.class);
+        startActivity(i);
     }
 }

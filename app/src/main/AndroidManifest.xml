@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="SPK Tahsin Kota Malang"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/ic_book_open_solid"
+        android:label="Cari Tahsin!"
+        android:roundIcon="@drawable/ic_book_open_solid"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ListEditData.AlMunawaroh"></activity>
