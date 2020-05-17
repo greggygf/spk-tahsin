@@ -7,20 +7,21 @@ import java.util.Map;
 
 public class Tahsin {
     public String nama;
-    public double skor;
+    public int sistem_keamanan, lama_pendidikan, jarak, fasilitas, biaya, program_pembelajaran, skor;
 
     public Tahsin() {
-    }
-
-    public Tahsin(String nama, double skor) {
-        this.nama = nama;
-        this.skor = skor;
     }
 
     @Exclude
     public Map<String, Object> toMap() {
         HashMap<String, Object> result = new HashMap<>();
         result.put("nama", nama);
+        result.put("sistem_ keamanan", sistem_keamanan);
+        result.put("lama-pendidikan", lama_pendidikan);
+        result.put("jarak", jarak);
+        result.put("fasilitas", fasilitas);
+        result.put("biaya", biaya);
+        result.put("program-pembelajaran", program_pembelajaran);
         result.put("skor", skor);
         return result;
     }

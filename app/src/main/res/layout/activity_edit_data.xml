@@ -21,7 +21,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="48dp"
+        android:layout_marginRight="30dp"
         android:fontFamily="@font/poppins_bold"
         android:text="Edit Data"
         android:textColor="@color/colorGreen"
@@ -32,43 +32,109 @@
 
     <TextView
         android:id="@+id/subtitle"
-        android:layout_width="280dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_regular"
         android:text="Tolong beri tahu sedikit tentang tempat tahsin Anda sehingga kami dapat mempersonalisasi profil Anda."
         android:textAlignment="textEnd"
         android:textSize="14dp"
-        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
-    <TextView
-        android:id="@+id/titleNamaTempatTahsin1"
-        style="@style/titleForm"
-        android:text="Nama Tempat Tahsin - 1"
-        app:layout_constraintStart_toStartOf="@id/buttonBack"
-        app:layout_constraintTop_toBottomOf="@id/subtitle" />
-
-    <EditText
-        android:id="@+id/inputTitleNamaTempatTahsin1"
-        style="@style/inputTextForm"
-        android:layout_marginHorizontal="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleNamaTempatTahsin1" />
-
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/button_primary"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Update"
-        android:textColor="@color/colorWhite"
-        android:textSize="18dp"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/inputTitleNamaTempatTahsin1" />
+        app:layout_constraintTop_toBottomOf="@id/subtitle">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="30dp">
+
+            <Button
+                android:id="@+id/buttonAlInsan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="onClickAlInsan"
+                android:text="Al-Insan"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/buttonAlKautsar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="onClickAlKautsar"
+                android:text="Al-Kautsar"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonAlInsan" />
+
+            <Button
+                android:id="@+id/buttonAlMuhajirin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="onClickAlMuhajirin"
+                android:text="Al-Muhajirin"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonAlKautsar" />
+
+            <Button
+                android:id="@+id/buttonAlMujib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="onClickAlMujib"
+                android:text="Al-Mujib"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonAlMuhajirin" />
+
+            <Button
+                android:id="@+id/buttonAlMunawaroh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:background="@drawable/button_primary"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="onClickAlMunawaroh"
+                android:text="Al-Munawaroh"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/buttonAlMujib" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListEditData.AlInsan">
+
+    <ImageView
+        android:id="@+id/buttonBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:onClick="onClickListData"
+        android:src="@drawable/ic_arrow_left_solid_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Al-Insan"
+        android:textColor="@color/colorGreen"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="@id/buttonBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/buttonBack" />
+
+    <TextView
+        android:id="@+id/titleSistemKeamanan"
+        style="@style/titleForm"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="Sistem Keamanan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/inputSistemKeamanan"
+        style="@style/inputTextForm"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberDecimal"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleSistemKeamanan" />
+
+    <TextView
+        android:id="@+id/titleLamaPendidikan"
+        style="@style/titleForm"
+        android:layout_marginEnd="30dp"
+        android:text="Lama Pendidikan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputSistemKeamanan" />
+
+    <EditText
+        android:id="@+id/inputLamaPendidikan"
+        style="@style/inputTextForm"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberDecimal"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLamaPendidikan" />
+
+    <TextView
+        android:id="@+id/titleJarak"
+        style="@style/titleForm"
+        android:layout_marginEnd="30dp"
+        android:text="Jarak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLamaPendidikan" />
+
+    <EditText
+        android:id="@+id/inputJarak"
+        style="@style/inputTextForm"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberDecimal"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleJarak" />
+
+    <TextView
+        android:id="@+id/titleFasilitas"
+        style="@style/titleForm"
+        android:layout_marginEnd="30dp"
+        android:text="Fasilitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputJarak" />
+
+    <EditText
+        android:id="@+id/inputFasilitas"
+        style="@style/inputTextForm"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberDecimal"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleFasilitas" />
+
+    <TextView
+        android:id="@+id/titleBiaya"
+        style="@style/titleForm"
+        android:layout_marginEnd="30dp"
+        android:text="Biaya"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputFasilitas" />
+
+    <EditText
+        android:id="@+id/inputBiaya"
+        style="@style/inputTextForm"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberDecimal"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleBiaya" />
+
+    <TextView
+        android:id="@+id/titlePP"
+        style="@style/titleForm"
+        android:layout_marginEnd="30dp"
+        android:text="Program Pembelajaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputBiaya" />
+
+    <EditText
+        android:id="@+id/inputPP"
+        style="@style/inputTextForm"
+        android:layout_marginEnd="30dp"
+        android:inputType="numberDecimal"
+        android:maxLength="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titlePP" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/button_primary"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="onClickUpdateData"
+        android:text="Update"
+        android:textColor="@color/colorWhite"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputPP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

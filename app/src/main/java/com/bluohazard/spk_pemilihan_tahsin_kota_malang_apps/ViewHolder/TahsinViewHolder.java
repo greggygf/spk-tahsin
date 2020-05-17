@@ -20,8 +20,8 @@ public class TahsinViewHolder extends RecyclerView.ViewHolder {
         tvSkor = itemView.findViewById(R.id.tv_skor_tempat_tahsin);
     }
 
-    public void bindToTahsin(Tahsin tahsin, View.OnClickListener onClickListener){
+    public void bindToTahsin(Tahsin tahsin, View.OnClickListener onClickListener) {
         tvNama.setText(tahsin.nama);
-        tvSkor.setText(Double.toString(tahsin.skor));
+        tvSkor.setText("" + tahsin.skor);
     }
 }

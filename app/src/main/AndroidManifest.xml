@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditDataActivity"></activity>
+        <activity android:name=".ListEditData.AlMunawaroh"></activity>
+        <activity android:name=".ListEditData.AlMujib" />
+        <activity android:name=".ListEditData.AlMuhajirin" />
+        <activity android:name=".ListEditData.AlKautsar" />
+        <activity android:name=".ListEditData.AlInsan" />
+        <activity android:name=".EditDataActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
